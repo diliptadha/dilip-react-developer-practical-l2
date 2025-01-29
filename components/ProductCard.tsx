@@ -85,7 +85,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-lg">
-            <h2 className="text-xl font-bold mb-4">Edit Product Title</h2>
+            <h2 className="text-xl font-bold mb-1">Edit Product Title</h2>
+            <h3 className="text-gray-600 text-sm">
+              this is not actully change the title{" "}
+            </h3>
             <input
               type="text"
               value={editedTitle}
