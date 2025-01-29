@@ -25,7 +25,6 @@ const Dashboard: React.FC = () => {
   const [name, setName] = useState("");
   const [itemsPerPage] = useState(9);
 
-  // Fetch products from DummyJSON API
   useEffect(() => {
     const user = JSON.parse(getFromLocalStorage("loggedUser") || "{}");
     setName(user.fullname);
@@ -38,7 +37,6 @@ const Dashboard: React.FC = () => {
     fetchProducts();
   }, []);
 
-  // Filtered and paginated products
   const filteredProducts = useMemo(() => {
     return products.filter((product) =>
       product.title.toLowerCase().includes(searchQuery.toLowerCase())
