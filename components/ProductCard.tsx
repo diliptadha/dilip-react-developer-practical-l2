@@ -61,7 +61,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <img
         src={product.thumbnail}
         alt={product.title}
-        className="h-32 w-full object-cover rounded"
+        className="w-[50%] m-auto object-content rounded"
       />
       <h3 className="font-bold text-lg mt-2">{product.title}</h3>
       <p className="text-gray-600 text-sm">{product.description}</p>
